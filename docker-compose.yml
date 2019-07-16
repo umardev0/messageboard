@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+  createmessage:
+    image: umarsaeed/create-msg-spring
+    restart: always
+    depends_on: 
+     - redis
+    ports:
+     - "7000:8080"
+
+  listmessage:
+    image: umarsaeed/list-msg-flask
+    container_name: list-msg-flask
+    restart: always
+    depends_on: 
+     - redis
+     - nginx
+    expose:
+      - 8080
+
+  nginx:
+    image: umarsaeed/flask-nginx
+    restart: always
+    ports:
+      - "7001:80"
+
+  redis:
+    image: redis
+    restart: always
+    command: [ "redis-server", "--protected-mode", "no" ]

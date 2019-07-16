@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mes="http://umar.com/message">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <mes:MessageRequest>
+         <mes:title>YOLO</mes:title>
+         <mes:content>Berry cool content</mes:content>
+         <mes:sender>Cool Dude</mes:sender>
+         <mes:url>www.cooldude.com</mes:url>
+      </mes:MessageRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
