@@ -26,7 +26,8 @@ $ chmod +x bash.sh
 $ ./bash.sh
 ```
 Wait for success messages to appear before using the services.
-**Note:** Everything was tested on macOS Mojave. Make appropraote changes if required to run bash script on windows 10.
+
+**Note:** Everything was tested on macOS Mojave. Make appropriate changes if required to run bash script on windows 10.
 
 ## Usage
 Once the services are running by either installation method, you can use them by following methods.
